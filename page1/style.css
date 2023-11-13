@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.mainp {
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    z-index: 1;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(237, 229, 229);
+    overflow: hidden;
+}
+
+.top {
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 50vh;
+    background: rgb(255, 255, 255);
+}
+
+.bottom {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    height: 50vh;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+}
+
+.center {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.main h1 {
+    position: absolute;
+    font-size: 9em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.bottom #bottomh {
+    top: -78px;
+    left: 25%;
+}
+
+.pageD {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+}
+
+.text {
+    width: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+}
+
+.text p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+}
+
+.cards {
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+#card-one {
+    top: 130%;
+    background: #aaa;
+}
+#card-one img{
+    object-fit:cover;
+}
+
+#card-two {
+    background: rgb(0, 0, 0);
+    top: 230%;
+   
+}#card-two img{
+    z-index: 1;
+    object-fit:contain;
+}
+#card-two #ttop,
+#card-two #tdown{
+transform: translate(0,10%);
+font-size: 10em;
+font-family: league spartan;
+text-align: center;
+}
+#card-two #ttop{
+    color:#66BEC5 ;
+}
+#card-two #tdown{
+    font-size: 12em;
+    -webkit-text-stroke: 1px #66BEC5;
+}
+#card-three {
+    top: 250%;
+}
+
+.page1{ 
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 5px;
+    background-color: #000000;
+}
+
+.scroll {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    height: 30%;
+    width: 100%;
+    font-size: 8em;
+    color: #9C692D;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    white-space: nowrap;
+}
+
+.one {
+    top: 10%;
+}
+
+.two {
+    top: 30%;
+}
+
+.three {
+    top: 50%;
+}
+
+.four {
+    top: 70%;
+}
+
+.one div,
+.three div {
+    font-weight: 400;
+    animation: anime 10s infinite linear;
+}
+
+.two div,
+.four div {
+    font-weight: 400;
+    animation: anime1 10s infinite linear;
+}
+
+.scroll div span {
+    -webkit-text-stroke: 1.2px #9C692D;
+    color: transparent;
+    font-weight: 500;
+}
+
+@keyframes anime {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes anime1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.pageD img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
+    overflow: hidden;
+}
